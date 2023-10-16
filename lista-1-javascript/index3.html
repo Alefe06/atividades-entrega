@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de reajuste</title>
+</head>
+<body>
+    <h1>Calculadora de reajuste salarial</h1>
+    
+    <form id="reajusteForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required><br>
+
+        <label for="salario">Salário:</label>
+        <input type="text" id="salario" required><br>
+
+        <label for="percentual">Percentual de Reajuste (%):</label>
+        <input type="text" id="percentual" required><br>
+
+        <button type="button" onclick="calcularReajuste()">Calcular</button>
+    </form>
+
+    <p id="resultado"></p>
+
+    <script src="reajuste.js"></script>
+</body>
+</html>

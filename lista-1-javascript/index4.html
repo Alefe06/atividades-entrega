@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de pontos de um time</title>
+</head>
+<body>
+    <h1>Calculadora de Pontos dos times de futebol</h1>
+    
+    <form id="pontosForm">
+        <label for="nomeTime">Nome do Time:</label>
+        <input type="text" id="nomeTime" required><br>
+
+        <label for="vitorias">Número de Vitórias:</label>
+        <input type="text" id="vitorias" required><br>
+
+        <label for="empates">Número de Empates:</label>
+        <input type="text" id="empates" required><br>
+
+        <button type="button" onclick="calcularPontos()">Calcular</button>
+    </form>
+
+    <p id="resultado"></p>
+
+    <script src="times.js"></script>
+</body>
+</html>

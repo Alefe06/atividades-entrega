@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora aumento de preço</title>
+</head>
+<body>
+    <h1>Calculadora de Aumento de Preço</h1>
+    
+    <form id="mercadoriaForm">
+        <label for="nomeMercadoria">Nome da Mercadoria:</label>
+        <input type="text" id="nomeMercadoria" required><br>
+
+        <label for="precoMercadoria">Preço da Mercadoria (R$):</label>
+        <input type="number" id="precoMercadoria" required><br>
+
+        <button type="button" onclick="calcularAumento()">Calcular</button>
+    </form>
+
+    <p id="resultado"></p>
+
+    <script src="aumento.js"></script>
+</body>
+</html>

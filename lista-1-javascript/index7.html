@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora viagens</title>
+</head>
+<body>
+    <h1>Calculadora de viagens de caminhão</h1>
+    
+    <form id="viagemForm">
+        <label for="caminhoes">Número de Caminhões:</label>
+        <input type="number" id="caminhoes" required><br>
+
+        <label for="alqueires">Número de Alqueires:</label>
+        <input type="number" id="alqueires" required><br>
+
+        <button type="button" onclick="calcularViagens()">Calcular</button>
+    </form>
+
+    <p id="resultado"></p>
+
+    <script src="viagens.js"></script>
+</body>
+</html>

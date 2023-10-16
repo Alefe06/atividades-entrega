@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de expressões</title>
+</head>
+<body>
+    <h1>Calculadora de expressões</h1>
+    
+    <form id="calculadoraForm">
+        <label for="a">Valor de 'a':</label>
+        <input type="text" id="a" required><br>
+
+        <label for="b">Valor de 'b':</label>
+        <input type="text" id="b" required><br>
+
+        <label for="c">Valor de 'c':</label>
+        <input type="text" id="c" required><br>
+
+        <button type="button" onclick="calcularExpressao()">Calcular</button>
+    </form>
+
+    <p id="resultado"></p>
+
+    <script>
+        function calcularExpressao() {
+            let a = parseFloat(document.getElementById("a").value);
+            let b = parseFloat(document.getElementById("b").value);
+            let c = parseFloat(document.getElementById("c").value);
+
+            if (c !== 0) {
+                let resultado = (a + b) / c;
+
+                document.getElementById("resultado").textContent = `O resultado de (${a} + ${b}) / ${c} é igual a ${resultado}`;
+            } else {
+                document.getElementById("resultado").textContent = "Erro: A divisão por zero não é permitida.";
+            }
+        }
+    </script>
+</body>
+</html>
